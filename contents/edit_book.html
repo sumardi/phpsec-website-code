@@ -1,0 +1,44 @@
+<div class="row">
+    {$sidebar}
+    <div class="col-xs-12 col-sm-9">
+        <h1><i class="glyphicon glyphicon-edit"></i> Edit Book</h1><hr />
+        <form method="post" action="edit_book.php" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="title" class="col-lg-2 control-label">Title</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" name="title" value="{$title}" id="title" placeholder="Book title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description" class="col-lg-2 control-label">Description</label>
+                <div class="col-lg-10">
+                    <textarea name="description" id="description" placeholder="Description" class="form-control" rows="5">{$description}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="price" class="col-lg-2 control-label">Price</label>
+                <div class="col-lg-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">MYR</span>
+                        <input type="text" class="form-control" placeholder="Price" name="price" value={$price}>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="category_id" class="col-lg-2 control-label">Category</label>
+                <div class="col-lg-5">
+                    <select name="category_id[]" class="form-control" multiple>
+                        {$category}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="id" value="{$id}" />
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="book_admin.php" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

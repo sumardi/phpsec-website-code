@@ -1,0 +1,20 @@
+<div class="row">
+    {$sidebar}
+    <div class="col-xs-12 col-sm-9">
+        <h1><i class="glyphicon glyphicon-plus-sign"></i> New Category</h1><hr />
+        <form method="post" action="new_category.php" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Category name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="category_admin.php" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

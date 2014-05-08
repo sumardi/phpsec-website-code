@@ -1,0 +1,22 @@
+<div class="row">
+    {$sidebar}
+    <div class="col-xs-12 col-sm-9">
+        <h1><i class="glyphicon glyphicon-cloud-upload"></i> Upload</h1><hr />
+        <form method="post" action="book_upload.php" class="form-horizontal" role="form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file" class="col-lg-2 control-label">Image file</label>
+                <div class="col-lg-5">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="{$size}" />
+                    <input type="file" name="file" id="file" placeholder="Category name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <input type="hidden" name="id" value="{$id}" />
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="book_admin.php" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

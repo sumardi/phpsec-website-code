@@ -1,0 +1,22 @@
+<h1><i class="glyphicon glyphicon-shopping-cart"></i> Shopping Cart</h1><hr>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th width="2%"><input type="checkbox"></th>
+            <th>Item</th>
+            <th width="20%">Quantity</th>
+            <th width="20%">Price</th>
+            <th width="20%">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {$view}
+        <tr>
+            <td colspan="3"></td>
+            <td><h4>Total Unpaid</h4></td>
+            <td><h4>MYR {$total}</h4></td>
+    </tbody>
+</table>
+<a href="#" class="btn btn-success"><i class="glyphicon glyphicon-credit-card"></i> Checkout</a>
+<a href="empty.php" class="btn btn-danger"><i class="glyphicon glyphicon-remove-sign"></i> Empty Cart</a>
